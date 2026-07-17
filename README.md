@@ -1,1 +1,46 @@
-# djangotube
+﻿# django_test
+
+바이브코딩 테스트용 Django 프로젝트입니다. 이 프로젝트는 절대 지우면 안됩니다.
+
+## 프롬프트
+
+이 프로젝트를 생성한 프롬프트입니다. 
+
+```
+나는 유튜브와 비슷한 동영상 스트리밍 서비스를 간단히 만들려고해. 이 서비스를 Django로 만들면 MVP까진 니가 다 할 수 있다고 들었어. 나는 코딩을 인생에 있어서 한 번도 해본적이 없는 사람이라 사용 방법까지 니가 다 정리해줘야해. 믿어보겠어. python은 설치하라고 강사님이 얘기해줘서 python은 설치했다!
+
+내가 필요한 요구사항은 아래와 같아.
+
+- 유튜브와 비슷한 UI
+- 클릭했을 때 영상 재생
+- 로그인(로그인한 사용자가 영상을 올릴 수 있는 형태는 아니고, 비공개된 영상을 볼 수 있는 서비스야)
+- 나는 admin 페이지에서 영상을 올려, 영상을 올릴 수 있는 사람은 나 혼자야.
+- (강사님 요구사항) 배포는 render에서 할 거야. 그래서 requirements.txt 파일이 필요하다네! render 서비스에서 배포할 때 처음에 `gunicorn 프로젝트명.wsgi`으로 시작한데! 참고해줘.
+```
+
+## id
+
+- admin
+- admin123
+
+## 로컬에서 설치 및 실행
+
+1. 파이썬 설치(https://www.python.org/downloads/)
+
+2. 모듈 설치 및 실행
+
+```bash
+# 가상환경 생성 (선택사항)
+python -m venv venv
+# windows(맥은 명령어가 다릅니다.)
+venv\Scripts\activate
+# 필요한 패키지 설치(requirements.txt 파일이 있다면)
+pip install -r requirements.txt
+# 서버 실행
+python manage.py runserver
+```
+
+## 배포
+
+
+Render.com에 배포됩니다. 그 전에 GitHub에 해당 파일을 올려야 합니다. 반드시 Private Repository로 설정해야 합니다.
